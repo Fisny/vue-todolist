@@ -31,11 +31,12 @@ new Vue({
             element.focus();
         },
         addTask: function () {
-            this.todoList.push(this.NewTask);
+            this.todoList.push(this.newTask);
             this.newTask = '';
             this.autofocus();
         },
         deleteTask: function (index) {
+            console.log(index);
             this.todoList.splice(index, 1)
             this.autofocus();
         }
